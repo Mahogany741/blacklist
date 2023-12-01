@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BlackList</title>
+</head>
+<body>
+    <main id="container">
+        <div class="boxItem">
+            <h1 id="titleBox">Blacklist</h1>
+            
+            <label for="text">Texto<sup>*</sup></label>
+            
+            <textarea name="text" id="text" placeholder="Insira o texto a ser revisado:" required></textarea>
+            
+            <label for="listaNegra" id="listTitle">Palavras da BlackList</label>
+            
+            <textarea name="blackList" id="listaNegra" disabled cols="30" rows="10"></textarea>
+
+            <button id="btnValidar" onclick="validarClipping()"><strong>Validar</strong> </button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
